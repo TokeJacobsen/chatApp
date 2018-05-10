@@ -1,0 +1,17 @@
+.listview {
+  display: flex;
+flex-direction: column;
+
+}
+
+.username{
+  text-align: center;
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    text-align: center;
+}

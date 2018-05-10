@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.dev.js"></script>
+  <script type="text/javascript" src="chat.js" ></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+</head>
+<body>
+
+<div class="container">
+  <div class="listview">
+
+  <h3 class="username">Welcome to the chat </h3>
+  <ul list-group id="message-list">
+  </ul>
+</div>
+
+
+<div class="footer">
+  <textarea class="form-control" rows="5" id="message" placeholder="Skriv besked..."></textarea>
+  <button id="send" class="btn-default" type="button" name="button">Send!</button>
+</div>
+
+</div>
+</body>
+</html>

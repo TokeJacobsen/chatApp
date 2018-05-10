@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="client.js" ></script>
+  <script type="text/javascript" src="index.js" ></script>
   <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
 </head>
 <body>
@@ -22,9 +22,9 @@
     	  <div class="modal-dialog">
 				<div class="loginmodal-container">
 					<h1>Login to Your Account</h1><br>
-				  <form>
-					<input type="text" name="user" placeholder="Username">
-					<input type="password" name="pass" placeholder="Password">
+				  <form id="login">
+					<input type="text" class="username" name="user" placeholder="Username">
+					<input type="password" class="password" name="pass" placeholder="Password">
 					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
 				  </form>
 				</div>
@@ -35,11 +35,13 @@
             <div class="modal-dialog">
             <div class="loginmodal-container">
               <h1>Register for the chat app</h1><br>
-              <form>
-              <input type="text" name="user" placeholder="Username">
-              <input type="text" name="password" placeholder="Password">
-              <input type="text" name="rePassword" placeholder="Retype password">
-              <input type="submit" name="register" class="loginmodal-submit" value="Register">
+              <form id="register">
+              <input type="text" class="user" name="first" placeholder="Username">
+              <input type="text" class="first" name="first" placeholder="Firstname">
+              <input type="text" class="last" name="last" placeholder="Lastname">
+              <input type="password" class="pass" name="password" placeholder="Password">
+              <input type="password" class="rePass" name="rePassword" placeholder="Retype password">
+              <input type="submit" class="" name="register" class="loginmodal-submit" value="Register">
               </form>
             </div>
           </div>
