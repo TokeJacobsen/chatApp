@@ -3,7 +3,19 @@ const chai = require("chai");
 const main = require('../app.js');
 
 
-const assert = chai.assert;
+const expect = chai.expect;
+
+var request = require('request');
+
+describe ('Main page', function() {
+it('Main page status', function(done) {
+    request('http://localhost:3000/' , function(error, response, body) {
+        expect(response.statusCode).to.equal(200);
+        done();
+    });
+});
+});
+
 
 //describe("Make a human", () => {
 //  it("should give me a human", () => {
